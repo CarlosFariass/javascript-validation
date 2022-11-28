@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>First Test</title>
+</head>
+<body>
+    <div class="carousel"> 
+        <div id="getImgAndAlt" class="carousel-item"> 
+            <img src="img/first-img.jpg" alt="image 01 description" class="img"> 
+            <a id="buttontext" href="#" class="carousel-item-link" onclick="displayFirstBtn();">Contratar agora</a> 
+        </div> 
+        <div id="getSecondImgAndAlt" class="carousel-item"> 
+            <img src="img/first-img.jpg" alt="image 02 description" class="img"> 
+            <a id="secondButtonText" href="#" class="carousel-item-link" onclick="displaySecondBtn();">Comprar</a> 
+        </div> 
+        <div id="getThirdImgAndAlt" class="carousel-item"> 
+            <img src="img/first-img.jpg" alt="image 03 description" class="img"> 
+            <a id="thirdButtonText" href="#" class="carousel-item-link inter-link-border" onclick="displayThirdBtn();">Saiba mais</a> 
+        </div> 
+    </div> 
+</body>
+</html>
+
+<script>
+
+    function displayFirstBtn() {
+        var $a = document.getElementById("getImgAndAlt");
+        var $img = $a.getElementsByTagName("img")[0];
+        var $buttontext = document.getElementById("buttontext").textContent;
+            console.log($img.alt);
+            console.log($buttontext);
+            console.log('Posição 1')
+    }
+    
+    function displaySecondBtn() {
+        var $a = document.getElementById("getSecondImgAndAlt");
+        var $img = $a.getElementsByTagName("img")[0];
+        var $buttontext = document.getElementById("secondButtonText").textContent;
+            console.log($img.alt);
+            console.log($buttontext);
+            console.log('Posição 2')
+    }
+    
+    function displayThirdBtn() {
+        var $a = document.getElementById("getThirdImgAndAlt");
+        var $img = $a.getElementsByTagName("img")[0];
+        var $buttontext = document.getElementById("thirdButtonText").textContent;
+            console.log($img.alt);
+            console.log($buttontext);
+            console.log('Posição 3')
+    }
+
+</script>
